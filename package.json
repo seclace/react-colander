@@ -1,13 +1,22 @@
 {
   "name": "react-colander",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "Colander for react components.",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
+    "compile": "babel -d lib/ ./src/",
+    "prepublish": "npm run compile",
     "test": "jest --watch"
   },
   "author": "Dmitry Pavlov <dmitry@valenki.team> (https://github.com/ByKeks)",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ByKeks/react-colander/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ByKeks/react-colander"
+  },
   "devDependencies": {
     "babel-cli": "^6.24.0",
     "babel-plugin-transform-class-properties": "^6.23.0",
