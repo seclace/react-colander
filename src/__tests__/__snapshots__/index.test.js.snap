@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`React colander should render Foo wrapped to Colander 1`] = `
+<ComposerWrapper
+  fetching={false}
+  user={
+    Object {
+      "id": 1,
+    }
+  }
+>
+  <Colander
+    colanders={
+      Array [
+        [Function],
+        [Function],
+      ]
+    }
+    props={
+      Object {
+        "fetching": false,
+        "user": Object {
+          "id": 1,
+        },
+      }
+    }
+  >
+    <Foo
+      fetching={false}
+      user={
+        Object {
+          "id": 1,
+        }
+      }
+    >
+      <div
+        className="foo"
+      />
+    </Foo>
+  </Colander>
+</ComposerWrapper>
+`;
+
+exports[`React colander should render Preloader instead Foo 1`] = `
+<ComposerWrapper
+  fetching={true}
+  user={null}
+>
+  <Colander
+    colanders={
+      Array [
+        [Function],
+        [Function],
+      ]
+    }
+    props={
+      Object {
+        "fetching": true,
+        "user": null,
+      }
+    }
+  >
+    <Preloader>
+      <div
+        className="preloader"
+      />
+    </Preloader>
+  </Colander>
+</ComposerWrapper>
+`;
+
+exports[`React colander should render UnauthMessage instead Foo 1`] = `
+<ComposerWrapper
+  fetching={false}
+  user={null}
+>
+  <Colander
+    colanders={
+      Array [
+        [Function],
+        [Function],
+      ]
+    }
+    props={
+      Object {
+        "fetching": false,
+        "user": null,
+      }
+    }
+  >
+    <UnauthMessage>
+      <div
+        className="unauth-message"
+      />
+    </UnauthMessage>
+  </Colander>
+</ComposerWrapper>
+`;
